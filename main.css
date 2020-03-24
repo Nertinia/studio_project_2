@@ -191,11 +191,4 @@ body{
       top:-120px;right:300px;
     }
   }
-  .gem{
-    position:relative;
-    top:-32px;
-    right:194px;
-    width:1100px;
-    height:740px;
-    z-index:10;
-  }
+  
