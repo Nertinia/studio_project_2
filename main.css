@@ -5,16 +5,19 @@ body{
   width:1000px;
   height:700px;
 }
+.smoke{
+  display:none;
+}
 .phase3{
   display:none;
 }
-.petal1{
+#petal1{
   display:none;
 }
-.petal2{
+#petal2{
   display:none;
 }
-.petal3{
+#petal3{
   display:none;
 }
   #ball{
@@ -221,13 +224,16 @@ body{
     .phase3{
       display:none;
     }
-    .petal1{
+    .smoke{
       display:none;
     }
-    .petal2{
+    #petal1{
       display:none;
     }
-    .petal3{
+    #petal2{
+      display:none;
+    }
+    #petal3{
       display:none;
     }
 #ball{
@@ -332,6 +338,9 @@ body{
 .flower_base{
   display:none;
 }
+.smoke{
+  display:none;
+}
   .phase3{
     position:relative;
 width:980px;
@@ -341,7 +350,7 @@ right:-15px;
 display:block;
 z-index:10;
   }
-  @@keyframes move7 {
+  @@keyframes animate {
     from{
       transform:rotate(0deg);
     }
@@ -349,7 +358,7 @@ z-index:10;
       transform:rotate(20deg);
     }
   }
-  .petal1{
+  #petal1{
     position:relative;
 width:450px;
 height:570px;
@@ -357,9 +366,9 @@ bottom:760px;
 right:-280px;
 display:block;
 z-index:8;
-  animation: move7 1s linear infinite;
+  animation: animate 1s linear infinite;
   }
-  .petal2{
+  #petal2{
     position:relative;
 width:1000px;
 height:720px;
@@ -367,9 +376,9 @@ bottom:1370px;
 right:-10px;
 display:block;
 z-index:5;
-  animation: move7 1s linear infinite;
+  animation: animate 1s linear infinite;
   }
-  .petal3{
+  #petal3{
     position:relative;
 width:1000px;
 height:740px;
@@ -377,7 +386,7 @@ bottom:2090px;
 right:60px;
 display:block;
 z-index:5;
-  animation: move7 1s linear infinite;
+  animation: animate 1s linear infinite;
   }
   #pink{
     display:none;
@@ -416,3 +425,66 @@ z-index:5;
     display:none;
   }
 }
+
+ @media  (max-width: 1100px){
+   body{
+     background-image: url("smoke.png");
+
+   }
+
+   .flower_base{
+     display:block;
+     width:1000px;
+     height:700px;
+     z-index:5;
+   }
+     .phase3{
+      display:none;
+     }
+     #petal1{
+    display:none;
+     }
+     #petal2{
+    display:none;
+     }
+     #petal3{
+  display:none;
+     }
+     #pink{
+       display:none;
+     }
+     #pink1{
+       display:none;
+     }
+     #pink2{
+       display:none;
+     }
+     #c1{
+       display:none;
+     }
+     #c2{
+       display:none;
+     }
+     #c3{
+       display:none;
+     }
+     #ball{
+       display:none;
+     }
+     #ball1{
+       display:none;
+     }
+     #ball2{
+       display:none;
+     }
+     #sugar{
+       display:none;
+     }
+     #sugar1{
+       display:none;
+     }
+     #sugar2{
+       display:none;
+     }
+   }
+ }
